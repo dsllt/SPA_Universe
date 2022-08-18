@@ -1,0 +1,125 @@
+/* CSS
+HTML
+- mudar href no html
+JS
+- mudar router.add */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+
+  --primary-color: #e1e1e6;
+  --secondary-color: #c4c4cc;
+  --select-color: #ffffff;
+  --hover-color: #02799d;
+}
+
+body {
+  background: url(./src/bg_home.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.bg_explore {
+  background: url(./src/bg_explore.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.bg_universe {
+  background: url(./src/bg_universe.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+nav a:hover {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--select-color);
+
+  transition: 300ms ease-in-out;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--primary-color);
+}
+
+.home,
+.e404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.home a {
+  width: 20rem;
+
+  text-decoration: none;
+  color: var(--select-color);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1.2rem 3.2rem;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+
+  align-self: center;
+}
+
+.home a:hover {
+  color: var(--hover-color);
+  background: var(--select-color);
+}
+
+.focus {
+  color: var(--select-color);
+  font-weight: 700;
+}
+
+.explore,
+.universe {
+  margin-left: 14.2rem;
+  max-width: 65rem;
+
+  text-align: left;
+  justify-content: start;
+
+  padding-top: 10.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: #e1e1e6;
+}
